@@ -35,7 +35,7 @@
   } ],
   "schemes" : [ "https" ],
   "paths" : {
-    "/livros" : {
+    "/api/v1/livros" : {
       "get" : {
         "tags" : [ "livro" ],
         "summary" : "listagem de todos os livros",
@@ -84,7 +84,7 @@
         }
       }
     },
-    "/livros/{idLivro}" : {
+    "/api/v1/livros/{idLivro}" : {
       "get" : {
         "tags" : [ "livro" ],
         "summary" : "Pesquisa de livro pelo id",
@@ -163,7 +163,7 @@
         }
       }
     },
-    "/livros/{idLivro}/autores" : {
+    "/api/v1/livros/{idLivro}/autores" : {
       "get" : {
         "tags" : [ "livro" ],
         "summary" : "listagem de autores a partir do livro",
@@ -189,7 +189,7 @@
         }
       }
     },
-    "/livros/{idLivro}/editoras" : {
+    "/api/v1/livros/{idLivro}/editoras" : {
       "get" : {
         "tags" : [ "livro" ],
         "summary" : "listagem de editora a partir do livro",
@@ -215,7 +215,7 @@
         }
       }
     },
-    "/livros/{idLivro}/comentarios" : {
+    "/api/v1/livros/{idLivro}/comentarios" : {
       "get" : {
         "tags" : [ "livro" ],
         "summary" : "listagem de comentarios a partir do livro",
@@ -241,7 +241,7 @@
         }
       }
     },
-    "/livros/p?nome=Livro1" : {
+    "/api/v1/livros/p?nome=Livro1" : {
       "get" : {
         "tags" : [ "livro" ],
         "summary" : "pesquisa de livro por nome ou id",
@@ -268,7 +268,7 @@
         }
       }
     },
-    "/autores" : {
+    "/api/v1/autores" : {
       "get" : {
         "tags" : [ "autor" ],
         "summary" : "listagem de todos os autores",
@@ -317,7 +317,7 @@
         }
       }
     },
-    "/autores/{idAutor}" : {
+    "/api/v1/autores/{idAutor}" : {
       "get" : {
         "tags" : [ "autor" ],
         "summary" : "Pesquisa de autor pelo id",
@@ -396,7 +396,7 @@
         }
       }
     },
-    "/autores/{idAutor}/livros" : {
+    "/api/v1/autores/{idAutor}/livros" : {
       "get" : {
         "tags" : [ "autor" ],
         "summary" : "listagem de livors a partir do autor",
@@ -422,7 +422,7 @@
         }
       }
     },
-    "/autores/{idAutor}/editoras" : {
+    "/api/v1/autores/{idAutor}/editoras" : {
       "get" : {
         "tags" : [ "autor" ],
         "summary" : "listagem de editora a partir do autor",
@@ -448,7 +448,7 @@
         }
       }
     },
-    "/autores/p?nome=Autor1" : {
+    "/api/v1/autores/p?nome=Autor1" : {
       "get" : {
         "tags" : [ "autor" ],
         "summary" : "pesquisa de autor por nome",
@@ -475,7 +475,7 @@
         }
       }
     },
-    "/editoras" : {
+    "/api/v1/editoras" : {
       "get" : {
         "tags" : [ "editora" ],
         "summary" : "listagem de todos os editoras",
@@ -524,7 +524,7 @@
         }
       }
     },
-    "/editoras/{idEditora}" : {
+    "/api/v1/editoras/{idEditora}" : {
       "get" : {
         "tags" : [ "editora" ],
         "summary" : "Pesquisa de editora pelo id",
@@ -603,7 +603,7 @@
         }
       }
     },
-    "/editoras/{idEditora}/livros" : {
+    "/api/v1/editoras/{idEditora}/livros" : {
       "get" : {
         "tags" : [ "editora" ],
         "summary" : "listagem de livros a partir do editora",
@@ -629,7 +629,7 @@
         }
       }
     },
-    "/editoras/{idEditora}/autores" : {
+    "/api/v1/editoras/{idEditora}/autores" : {
       "get" : {
         "tags" : [ "editora" ],
         "summary" : "listagem de autores a partir da editora",
@@ -655,7 +655,7 @@
         }
       }
     },
-    "/editoras/p?nome=Editora1" : {
+    "/api/v1/editoras/p?nome=Editora1" : {
       "get" : {
         "tags" : [ "editora" ],
         "summary" : "pesquisa de editora por nome",
@@ -682,7 +682,7 @@
         }
       }
     },
-    "/clientes" : {
+    "/api/v1/clientes" : {
       "get" : {
         "tags" : [ "cliente" ],
         "summary" : "listagem de todos os clientes",
@@ -731,7 +731,7 @@
         }
       }
     },
-    "/clientes/{idCliente}" : {
+    "/api/v1/clientes/{idCliente}" : {
       "get" : {
         "tags" : [ "cliente" ],
         "summary" : "listagem de cliente por ID",
@@ -805,7 +805,7 @@
         }
       }
     },
-    "/clientes/{iCliente}/pedidos" : {
+    "/api/v1/clientes/{iCliente}/pedidos" : {
       "get" : {
         "tags" : [ "cliente" ],
         "summary" : "listagem de pedidos a partir do cliente",
@@ -831,7 +831,7 @@
         }
       }
     },
-    "/carrinhoCompra/{idLivro}" : {
+    "/api/v1/carrinhoCompra/{idLivro}" : {
       "post" : {
         "tags" : [ "carrinho de compra" ],
         "summary" : "adicionar item no carrinho de compra",
@@ -886,7 +886,7 @@
         }
       }
     },
-    "/pedido" : {
+    "/api/v1/pedido" : {
       "post" : {
         "tags" : [ "pedido" ],
         "summary" : "enviar para pagamento pedido de compra",
@@ -908,7 +908,7 @@
         }
       }
     },
-    "/pedido/{idPedido}" : {
+    "/api/v1/pedido/{idPedido}" : {
       "get" : {
         "tags" : [ "pedido" ],
         "summary" : "pesquisa de pedido por ID",
